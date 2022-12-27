@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watch</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(50deg, #04c8ea 15%, blue);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .watch{
+            padding: 15px;
+            background-color: rgba(255, 255, 255, .4);
+            min-width: 270px;
+            width: 40%;
+            backdrop-filter: blur(5px);
+            text-align: center;
+            border-radius: 6px;
+        }
+        #timer{
+            font-size: 45px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #theDate{
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="watch">
+        <h1 id="timer" onload="showTime()"></h1>
+        <h1 id="theDate" onload="thedate()"></h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
